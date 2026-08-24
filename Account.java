@@ -38,7 +38,7 @@ public class Account {
         return balance;
     }
     public int debit( int amount){
-        if ( amount<balance)
+        if ( amount<=balance)
             balance = balance - amount;
         else
             System.out.println("Sorry, not enough credit to withdraw");
